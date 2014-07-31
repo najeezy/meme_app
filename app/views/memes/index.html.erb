@@ -1,0 +1,6 @@
+<h2>Meme's Index</h2>
+<ol>
+  <% @memes.each do |meme| %>
+      <li><%= link_to meme.name, meme_path(meme) %></li>
+  <% end %>
+</ol>
