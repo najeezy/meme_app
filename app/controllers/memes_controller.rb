@@ -1,7 +1,11 @@
 class MemesController < ApplicationController
 
-def show
-  @meme = Meme.all
-end
+  def index
+    @memes = Meme.all
+  end
+
+  def show
+    @meme = Meme.all
+  end
 
 end
